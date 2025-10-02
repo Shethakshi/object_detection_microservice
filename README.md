@@ -35,36 +35,12 @@ yaml
 ## Setup Instructions
 
 ### 1. Clone the repository
-
+```bash
 git clone https://github.com/Shethakshi/object_detection_microservice.git
 cd object_detection_microservice
+
 2. Build and run with Docker Compose
-
-
-docker-compose up --build
-UI Backend → http://localhost:5000
-
-AI Backend → http://localhost:5001
+   docker-compose up --build
 
 3. Test with cURL
-
-curl -X POST "http://localhost:5000/upload/" -F "file=@path_to_your_image/image.jpg"
-
-Project Structure
-
-project_root/
-│
-├─ AI_backend/         # AI detection service
-│  ├─ app.py
-│  ├─ Dockerfile
-│  ├─ req.txt
-│  └─ yolov3/          # YOLOv8 model & code
-│
-├─ UI_backend/         # User upload service
-│  ├─ app.py
-│  ├─ Dockerfile
-│  └─ req.txt
-│
-├─ docker-compose.yml
-├─ README.md
-└─ images/             # Sample test images
+curl -X POST "http://localhost:5000/upload/" -F "file=@path_to_your_image/image.jp
