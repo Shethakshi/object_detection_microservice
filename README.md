@@ -39,9 +39,9 @@ yaml
 git clone https://github.com/Shethakshi/object_detection_microservice.git
 cd object_detection_microservice
 
-```
 ### 2. Build and run with Docker Compose
-   docker-compose up --build
+```
+docker-compose up --build
 
 ### 3. Test with cURL
 ```
