@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  ui_backend:
+    build: ./ui_backend
+    ports:
+      - "5000:5000"          # Host:Container
+    depends_on:
+      - ai_backend
+    networks:
+      - app-network
+
+  ai_backend:
+    build: ./ai_backend
+    ports:
+      - "5001:5000"          # Host:Container mapping (host 5001 -> container 5000)
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
