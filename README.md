@@ -39,8 +39,10 @@ yaml
 git clone https://github.com/Shethakshi/object_detection_microservice.git
 cd object_detection_microservice
 
-2. Build and run with Docker Compose
+```bash
+### 2. Build and run with Docker Compose
    docker-compose up --build
 
-3. Test with cURL
+### 3. Test with cURL
+```bash
 curl -X POST "http://localhost:5000/upload/" -F "file=@path_to_your_image/image.jp
