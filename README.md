@@ -47,3 +47,25 @@ docker-compose up --build
 ```
 curl -X POST "http://localhost:5000/upload/" -F "file=@path_to_your_image/image.jp
 ```
+### 4. Example output
+```
+{
+  "detections": [
+    {
+      "bbox": [x1, y1, x2, y2],
+      "confidence": 0.6,
+      "class": 0
+    }
+  ],
+  "image_path": "outputs/xxxx_pred.jpg",
+  "json_path": "outputs/xxxx_pred.json"
+}
+```
+## Sample Input and Output  
+
+### Input Image  
+![Input Image](output/images.jpeg)
+
+### Detection Result  
+![Predicted Output](output/1b1bb80d_pred.jpg)
+
