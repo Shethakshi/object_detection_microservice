@@ -64,8 +64,8 @@ curl -X POST "http://localhost:5000/upload/" -F "file=@path_to_your_image/image.
 ## Sample Input and Output  
 
 ### Input Image  
-![Input Image](output/images.jpeg)
+![Input Image](output/download.jpeg)
 
 ### Detection Result  
-![Predicted Output](output/1b1bb80d_pred.jpg)
+![Predicted Output](output/7a3730ae_pred.jpg)
 
